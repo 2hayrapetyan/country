@@ -1,0 +1,12 @@
+.details {
+  flex: 1;
+  margin-top: 50px;
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .details {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+}

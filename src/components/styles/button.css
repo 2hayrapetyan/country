@@ -1,0 +1,36 @@
+button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  color: #333333;
+  padding: 11.5px 56px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.primary {
+  background: #bfaff2;
+}
+.primary:hover {
+  background: #f8d57e;
+}
+.secondary {
+  background: #f8d57e;
+}
+.secondary:hover {
+  background: #bfaff2;
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    padding: 7px 30px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  button {
+    padding: 11.5px 0;
+    /* width: 100%; */
+    font-size: 18px;
+  }
+}

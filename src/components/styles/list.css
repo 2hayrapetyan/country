@@ -1,0 +1,74 @@
+.listParent {
+  flex: 1;
+}
+
+.myList {
+  max-height: calc(100vh - 400px);
+  overflow: auto;
+  border-radius: 15px;
+}
+
+.myList ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 35px;
+  list-style: none;
+  background: white;
+}
+.myList::-webkit-scrollbar {
+  background: white;
+  border-radius: 0 15px 15px 0;
+  width: 8px;
+  transform: rotate(180deg);
+}
+
+.myList::-webkit-scrollbar-thumb {
+  background-color: #bfaff2;
+  border-radius: 3px;
+}
+
+.myList ul a {
+  padding: 30px 0px 30px 100px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  background: inherit;
+  font-size: 20px;
+  color: #000000;
+}
+.myList ul a:hover {
+  cursor: pointer;
+  background: #bfaff2;
+}
+
+@media screen and (max-width: 768px) {
+  .myList {
+    max-height: calc(100vh - 310px);
+    overflow: auto;
+  }
+
+  .myList ul {
+    gap: 10px;
+    padding: 25px;
+  }
+
+  .myList ul a {
+    padding: 20px 0px 20px 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .myList {
+    max-height: calc(100vh - 310px);
+    overflow: auto;
+  }
+
+  .myList ul {
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .myList ul a {
+    padding: 20px 0px 20px 20px;
+  }
+}

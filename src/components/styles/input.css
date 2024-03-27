@@ -1,0 +1,25 @@
+input[type="text"],
+input[type="text"]:focus {
+  border: none;
+  outline: none;
+  padding: 11.5px 36.5px;
+  border-radius: 15px;
+  background: #333333;
+  color: #757575ff;
+}
+
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="text"]:focus {
+    padding: 11.5px 25px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  input[type="text"],
+  input[type="text"]:focus {
+    font-size: 18px;
+    padding: 11.5px 20px;
+  }
+}

@@ -1,0 +1,36 @@
+header {
+  padding: 25px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 3.5vw 0;
+  }
+  header div {
+    gap: 3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    padding: 25px 0px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+  }
+  header div {
+    margin: 10px auto;
+  }
+
+  header div button {
+    display: none;
+  }
+}

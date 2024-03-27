@@ -1,0 +1,89 @@
+main {
+  margin: 77px 50px;
+  gap: 2vw;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  max-width: 465px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.title h1 {
+  font-size: 60px;
+  line-height: 90px;
+}
+.title span {
+  line-height: 32px;
+  opacity: 0.4;
+}
+.image {
+  max-width: 500px;
+}
+.image img {
+  border-radius: 20px;
+  width: 100%;
+  background: #333333;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 77px 0px;
+    gap: 1vw;
+  }
+  .title {
+    gap: 2vw;
+  }
+
+  .title h1 {
+    font-size: 4.688vw;
+    line-height: 7vw;
+  }
+  .title span {
+    line-height: 2.5vw;
+    font-size: 1.4vw;
+  }
+  .title div {
+    width: 200px;
+  }
+  .image {
+    max-width: 40vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    margin: 40px 0px;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+  .title {
+    align-items: center;
+    gap: 60px;
+  }
+
+  .title h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .title span {
+    line-height: 32px;
+    font-size: 18px;
+  }
+  .title div {
+    width: 175px;
+  }
+  .title button {
+    width: 100%;
+  }
+  .image {
+    max-width: 100vw;
+  }
+}
